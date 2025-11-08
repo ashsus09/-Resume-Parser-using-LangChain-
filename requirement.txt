@@ -5,4 +5,7 @@ langchain-community
 PyPDF2
 docx2txt
 TextLoader
+langchain-core
+
+
 
