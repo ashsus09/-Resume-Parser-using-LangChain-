@@ -1,12 +1,12 @@
 
-# Step 1: Imports
 import os
 import json
 import streamlit as st
 
+# Use unified (old) import path for LangChain <=0.1.20
 from langchain.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, TextLoader
+from langchain.document_loaders import PyPDFLoader, Docx2txtLoader, TextLoader
 
 
 # Step 2: Load environment and configure Gemini LLM
@@ -131,6 +131,7 @@ def main():
 # Entry point
 if __name__ == "__main__":
     main()
+
 
 
 
