@@ -1,12 +1,11 @@
 streamlit
 python-dotenv
-langchain==0.3.7
-langchain-core==0.3.15
-langchain-community==0.3.3
-langchain-google-genai==1.0.8
+langchain==0.1.20
+langchain-google-genai
 PyPDF2
 docx2txt
---extra-index-url https://pypi.org/simple
+
+
 
 
 
