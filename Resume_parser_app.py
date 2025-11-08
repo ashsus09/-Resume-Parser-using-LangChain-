@@ -17,7 +17,12 @@ from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, Te
 
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI( model = "Gemini 2.5 Flash", google_api_key = os.getenv("GOOGLE_API_KEY"))
+google_api_key = st.secrets.get("GOOGLE_API_KEY", os.getenv("GOOGLE_API_KEY"))
+
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.5-flash",
+    google_api_key=google_api_key
+)
 
 PROMPT_TEMPLATE = """
 
@@ -295,4 +300,5 @@ def main():
 # Entry point
 if __name__ == "__main__":
     main()
+
 
