@@ -2,8 +2,6 @@
 import os
 import json
 import streamlit as st
-
-
 from langchain.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.document_loaders import PyPDFLoader, Docx2txtLoader, TextLoader
@@ -131,6 +129,7 @@ def main():
 # Entry point
 if __name__ == "__main__":
     main()
+
 
 
 
