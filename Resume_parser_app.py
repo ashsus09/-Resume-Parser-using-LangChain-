@@ -15,7 +15,7 @@ from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, Te
 
 #step2: config/ LLM
 
-load_dotenv()
+#load_dotenv()
 
 google_api_key = st.secrets.get("GOOGLE_API_KEY", os.getenv("GOOGLE_API_KEY"))
 
@@ -300,5 +300,6 @@ def main():
 # Entry point
 if __name__ == "__main__":
     main()
+
 
 
