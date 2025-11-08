@@ -2,7 +2,7 @@
 
 import os
 import streamlit as st
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import json
 
 
@@ -300,6 +300,7 @@ def main():
 # Entry point
 if __name__ == "__main__":
     main()
+
 
 
 
